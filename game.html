@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reincarnation - THE GAME</title>
+
+<link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel+Decorative|Philosopher|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href="css/game.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>	
+	$(function(){
+		$(".toggle").on("click", function() {
+
+			if ($(".item").hasClass("active")) {
+				$(".item").removeClass("active");
+			}
+			else {
+				$(".item").addClass("active");
+			}
+
+		})
+	});
+</script>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<ul>
+			<li class="logo"><a href="#">IN-THEORY.LIFE</a></li>
+
+			<li class="item"><a href="index.html">INTRO</a></li>
+			<li class="item"><a href="history.html">HISTORY</a></li>
+			<li class="item"><a href="history2.html">HISTORY 2</a></li>
+			<li class="item"><a href="history3.html">HISTORY 3</a></li>
+			<li class="item"><a href="history4.html">HISTORY 4</a></li>
+			<li class="item"><a href="howtofind.html">HOW TO FIND</a></li>
+			<li class="item"><a href="game.html" class="active">GAME</a></li>
+			<li class="item"><a href="r-symbols.html">The Symbols</a></li>
+			<li class="item"><a href="QA.html">Q & A</a></li>
+			<li class="item"><a href="links.html">SOURCES</a></li>
+
+			<li class="toggle"><span class="bars"></span></li>
+		</ul>
+	</nav>
+</header>
+
+
+
+    <div class="main-container">
+      <div id="overlay" class="start">
+        <h2 class="title">Wheel of Success</h2>
+        <a class="btn__reset">Start Game</a>
+      </div>
+
+      <div id="banner" class="section">
+        <h2 class="header">Wheel of Success</h2>
+      </div>
+
+      <div id="phrase" class="section">
+        <ul></ul>
+      </div>
+      <div id="qwerty" class="section">
+        <div class="keyrow">
+          <button>q</button><button>w</button><button>e</button><button>r</button><button>t</button><button>y</button><button>u</button><button>i</button><button>o</button><button>p</button>
+        </div>
+        <div class="keyrow">
+          <button>a</button><button>s</button><button>d</button><button>f</button><button>g</button><button>h</button><button>j</button><button>k</button><button>l</button>
+        </div>
+        <div class="keyrow">
+          <button>z</button><button>x</button><button>c</button><button>v</button><button>b</button><button>n</button><button>m</button>
+        </div>
+      </div>
+
+      <div id="scoreboard" class="section">
+        <ol>
+          <li class="tries"><img src="liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="liveHeart.png" height="35px" width="30px"></li>
+        </ol>
+      </div>
+    </div>
+
+
+
+<div class="tosymbols">
+	<a href="r-symbols.html">SYMBOLS</a>
+</div>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
+<script src="js/game.js"></script>
+</body>
+</html>
