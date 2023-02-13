@@ -235,9 +235,13 @@ li a {
 
 
 	#navbar {
-		border: 2px solid red;
+		border: ;
 		position: absolute;
 		z-index: 1;
+		width: 100%;
+	}
+	#navbar ul {
+	
 	}
 	.item {
 		display: inline-block;
