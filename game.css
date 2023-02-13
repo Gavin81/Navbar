@@ -235,23 +235,27 @@ li a {
 
 
 	#navbar {
-		border: ;
-		position: absolute;
+/* 		position: absolute; */
 		z-index: 1;
 		width: 100%;
 	}
 	#navbar ul {
+	   display: flex;
+	}
+	#navbar .logo {
+		flex-grow: 1;
+		border: none;
+/* 	   padding: 0px;
+	   margin: 0;
+	   order: 0; */
+	}
+	#navbar li {
 	
 	}
-	.logo {
-	   padding: 0px;
-	   margin: 0;
-	   order: 0;
-	}
 	.item {
-		display: inline-block;
+/* 		display: inline-block;
 		width: auto;
-		padding: 10px 5px;
+		padding: 10px 5px; */
 	}
 	.toggle {
 		display: none;
@@ -260,16 +264,12 @@ li a {
 	
 	}
 	.item {
-		border: 2px solid yellow;
-		order: 1;
+		
 	}
 	.item a {
 		font-size: 22px;
 	}
 
-/* 	nav li {
-		padding: 10px 5px;
-	} */
 	.active {
 		border: 1px solid white;
 		padding: 0 0 0 0;
