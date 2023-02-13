@@ -243,6 +243,11 @@ li a {
 	#navbar ul {
 	
 	}
+	.logo {
+	   padding: 0px;
+	   margin: 0;
+	   order: 0;
+	}
 	.item {
 		display: inline-block;
 		width: auto;
@@ -250,10 +255,8 @@ li a {
 	.toggle {
 		display: none;
 	}
-	.logo {
-		padding: 0px;
-		margin: 0;
-		order: 0;
+	#navbar li{
+	
 	}
 	.item {
 		border: 2px solid yellow;
