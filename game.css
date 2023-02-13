@@ -251,6 +251,7 @@ li a {
 	.item {
 		display: inline-block;
 		width: auto;
+		padding: 10px 5px;
 	}
 	.toggle {
 		display: none;
@@ -266,9 +267,9 @@ li a {
 		font-size: 22px;
 	}
 
-	nav li {
+/* 	nav li {
 		padding: 10px 5px;
-	}
+	} */
 	.active {
 		border: 1px solid white;
 		padding: 0 0 0 0;
