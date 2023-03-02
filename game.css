@@ -46,13 +46,12 @@
 
 
 
-/*** MOBILE CSS ***/
+/*** MOBILE CSS **********************************************/
 @media screen and (min-width: 320px){
 
 
 	body {
 		background-color: #f8f8f8;
-		border-left: ;
 	}
 
 
@@ -67,9 +66,16 @@
 	}
 
 
+	header {
+		border-right: 2px solid turquoise;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+	}
+
 
 	#navbar {
-		z-index: ;
+		
 	}
 	#navbar ul {
 		border:;
@@ -79,10 +85,15 @@
 		align-items: center;
 	}
 
+	#navbar .logo {
+	
+	}
+	#navbar .logo a {
+		font-family: Cinzel;
+		font-size: 24px;
+	}
 
-/*	.toggle {
-		order: 1;
-	}*/
+	/* #navbar li */
 	#navbar .item {
 		width: 100%;
 		text-align: center;
@@ -101,22 +112,15 @@
 		border-bottom: 0.5px solid white;
 	}
 
-	#navbar .logo {
-	
-	}
-	#navbar .logo a {
-		font-family: Cinzel;
-		font-size: 24px;
-	}
 
-	.toggle {
+	#navbar .toggle {
 		order: 1;
 	}
-	.toggle {
+	#navbar .toggle {
 		cursor: pointer;
 	}
 
-	.bars {
+	#navbar .bars {
 		background-color: #999;
 		display: inline-block;
 		height: 3px;
@@ -124,7 +128,7 @@
 		width: 20px;
 	}
 
-	.bars::before, .bars::after {
+	#navbar .bars::before, .bars::after {
 		background-color: #999;
 		content: "";
 		display: inline-block;
@@ -132,54 +136,54 @@
 		position: absolute;
 		width: 20px;
 	}
-	.bars::before {
+	#navbar .bars::before {
 		top: 5px;
 	}
-	.bars::after {
+	#navbar .bars::after {
 		top: -5px;
 	}
 
 
 
-/* THE GAME AREA CSS */
-.main-container {
-	border: ;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 100%;
-	max-height: 900px;
-	text-align: center;
-}
-.section {
-	width: 100%;
-	padding: 10px;
-}
+
+/* THE GAME AREA CSS ********************************************************/
+	.main-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+		max-height: 900px;
+		text-align: center;
+	}
+	.section {
+		width: 100%;
+		padding: 10px;
+	}
 
 
-/*THE OVERLAY*/
-#overlay {
-		border: ;
-		z-index:;
-	  display: flex;
-	  flex-direction: column;
-	  position: fixed;
-	  color: green;
-	  justify-content: center;
-  	top: 72px;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  border-radius: 0px;
-}
+	/*THE OVERLAY*/
+	#overlay {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		color: ;
+		justify-content: center;
+	  	top: 72px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 0px;
+	}
 	#overlay .title {
+		border: ;
 		font-size: 35px;
 		padding: 5px;
 		color: black;
 	}
-	#overlay h3 {
+	#overlay span {
+		font-family: 'Cinzel';
 		color: black;
-		font-size: 15pt;
+		font-size: 20px;
 	}
 	#overlay .btn__reset {
 		border: ;
@@ -213,9 +217,9 @@
 		color: #D94545;
 	}
 
-	#banner .section {
+	#banner {
 		border: ;
-		margin: 90pt 0 0 0;
+		margin: 120px 0 0 0;
 		padding: 0;
 	}
 	#banner h2 {
@@ -223,21 +227,25 @@
 		font-size: 40px;
 		color: #5b85b7;
 		padding: 0;
-		margin: 30px 0 20px 0;
+		margin: 0px 0 0px 0;
 	}
-	#phrase .section {
-/*	font-size: 20px;
-		height: 65px;
-		width: 65px;
-		padding: 20px 1px 0 1px;
-		margin-right: 2px;
-		color: transparent;
-		background: D2D2D2;
-		border-radius: 5px;*/
+	#phrase {
+		border: ;
+	}
+	#phrase ul {
+		border: ;
+		display: flex;
+		height: auto;
+		width: ;
+		margin: 50px 0 50px 0;
+		padding: 0;
+		list-style-type: none;
 	}
 	.letter {
-		font-size: 20px;
-		height: 60px;
+		border: ;
+		font-size: 21px;
+		display: block;
+		height: 69px;
 		width: 65px;
 		padding: 20px 1px 0 1px;
 		margin-right: 2px;
@@ -253,20 +261,19 @@
 		background-color: #76CE82;
 		transition-duration: 1s;
 	}
-	#phrase ul {
-		border: ;
-		display: flex;
-		height: auto;
-		margin: 30px 0 70px 0;
-		padding: 0;
-		list-style-type: none;
-	}
+
 	#qwerty .section {
 
 	}
 
+
 /* KEYBOARD */
+	#qwerty {
+		padding: 30px 0 30px 0;
+		border: ;
+	}
 	#qwerty .keyrow {
+		border: ;
 		margin: 0;
 		display: flex;
 		justify-content: center;
@@ -301,7 +308,6 @@
 
 
 
-
 	.tosymbols {
 		
 	}
@@ -311,70 +317,136 @@
 		display: block;
 		margin-bottom: 0;
 		padding: 15px 0 15px 0;
+		border-radius: 7px;
 		background-color: #075770;
 		color: #f8f8f8;
 		text-decoration: none;
 	}
 
-
-
 }
 
 
 
-/* TABLET CSS */
+/* TABLET CSS *****************************************************/
 @media screen and (min-width: 768px){
 
 
 	body {
 		background-color: floralwhite;
-		border-left: 2px solid blue;
+		border: ;
 	}
 
+	header {
+		border-right: 2px solid green;
+	}
 
+	
 
+	/* THE NAVBAR  */
 	#navbar {
-		
+		border:;
 	}
 
-	ul {
+	#navbar ul {
 		justify-content: center;
 	}
-	.logo {
+	#navbar .logo {
+		border-left: ;
 		flex: 1;
 	}
-	.item.button {
+	#navbar li {
+		border: ;
 		width: auto;
 		order: 1;
 		display: block;
 	}
-	.toggle {
+	#navbar .item a {
+		border: ;
+		padding: 7px 15px;
+/*		background-color: teal;*/
+/*		border: 1px solid #006d6d;*/
+		border-radius: ;
+		text-decoration: none;
+	}
+	#navbar .item a:hover {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		transition: all .25s;
+	}
+	#navbar .toggle {
 		order: 2;
 		padding: 20px;
 	}
-	.button.secondary {
-		border: 0;
-	}
-	.button a {
-		padding: 7px 15px;
-		background-color: teal;
-		border: 1px solid #006d6d;
-		border-radius: 50em;
-		text-decoration: none;
-	}
-	.button.secondary a {
-		background: transparent;
-	}
-	.button a:hover {
-		transition: all .25s;
-	}
-	.button:not(.secondary) a:hover {
+    
+    /*
+    #navbar .item:not(.secondary) a:hover {
 		background-color: #006d6d;
 		border-color: #005959;
 	}
-	.button.secondary a:hover {
-		color: #ddd;
+	*/
+	
+	/*
+	#navbar .item .secondary a:hover {
+	
 	}
+	*/
+
+
+
+/* THE GAME AREA ***************************************/
+	.main-container {
+
+	}
+	.section {
+
+	}
+
+
+/** THE OVERLAY AREA **/
+	#overlay {
+
+	}
+	#overlay .title {
+		
+	}
+	#overlay span {
+
+	}
+	#overlay .btn__reset {
+
+	}
+
+	#banner {
+
+	}
+	#banner .header {
+
+	}
+
+	#phrase {
+
+	}
+	#phrase ul {
+
+	}
+
+	#qwerty {
+
+	}
+	#qwerty .keyrow {
+
+	}
+
+	#scoreboard {
+
+	}
+	#scoreboard ol {
+
+	}
+	#scoreboard li {
+
+	}
+
 
 
 
@@ -393,6 +465,7 @@
 }
 
 
+
 /**** DESKTOP ***/
 @media screen and (min-width: 1024px){
 
@@ -400,39 +473,44 @@
 	body {
 		border-left: none;
 	}
+	header {
+		border-right: 2px solid white;
+	}
 
 
 	#navbar {
-   	position: absolute;
-		z-index: 1;
+		border: ;
+		position: fixed;
 		width: 100%;
+		top: 0;
+		left: 0;
 	}
-
 	#navbar ul {
-		display: flex;
+		/*display: flex;
+		width: 100%;*/
 	}
 	#navbar .logo {
-		flex-grow: 1;
+	/*	flex-grow: 1;
 		border: none;
-	/*	padding: 0px;
+		padding: 0px;
 		margin: 0;
 		order: 0;*/
 	}
-	#navbar li {
-/*	border: 2px solid yellow;
-		display: inline-block;
+	#navbar .item {
+/*		border: 1px solid red;*/
+		display: flex;
 		width: auto;
-		padding: 10px 5px;*/
+		padding: 10px 0px;
 	}
-	.item {
-/*	display: inline-block;
-		width: auto;
-		padding: 10px 5px;
-*/	}
-	.item a {
-		font-size: 22px;
+	#navbar .item a {
+/*		border: 1px solid blue;*/
+		color: white;
+		font-size: 21px;
 	}
-	.toggle {
+	#navbar .item a:hover {
+		border: 1px solid whitesmoke;
+	}
+	#navbar .toggle {
 		display: none;
 	}
 
@@ -444,14 +522,11 @@
 
 
 
-/********************************************************************/
-
-
+/************ THE GAME DESKTOP CSS ***************/
 
 
 /* Main styles */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
-
 
 
 /* Variables */
@@ -468,7 +543,6 @@
 	  --font-size-medium: 20px;
 	  --transition: all .2s ease-in-out;
 	}
-
 
 
 
@@ -490,10 +564,10 @@
 	  display: inline-block;
 	}
 
-	h2 {
+	.title {
 	  margin: 0;
 	  text-transform: uppercase;
-	  font-family: 'Open Sans', sans-serif;
+/*	  font-family: 'Open Sans', sans-serif;*/
 	  font-size: var(--font-size-large);
 	  margin: 0;
 	}
@@ -644,9 +718,6 @@
 	}
 
 
-
-
-/********************************************************************/
 
 
 
